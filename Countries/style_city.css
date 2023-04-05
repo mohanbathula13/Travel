@@ -13,52 +13,22 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
+  padding-top: 60px;
 }
 
-header {
-  background-color: #00a8ff;
-  padding: 20px;
-  text-align: center;
+h2, h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2685b5;
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-  color: #fff;
-  text-shadow: 2px 2px #333;
-}
-
-
-.insertimg {
-  padding: 20px;
-}
-
-
-.card {
-   background-color:  #00a8ff;
-   padding: 20px;
-   margin-top: 20px;
-   border: 1px solid black;
-    margin: 20px;
-    width: 400px;
-    height: 400px;
-    box-shadow: 5px 5px 5px grey;
-    float: left;
-   
-}
-
-.d1 {   
-  float: left;
-  width: 33%;
-}
-
-.d2 {
-  float: left;
-  width: 33%;
-}
-.d2 {
-  float: left;
-  width: 33%;
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
 }
 
   
@@ -101,4 +71,67 @@ h1 {
 
   .destinations p {
     margin: 0;
+  }
+  nav {
+    background-color: #1e272e;
+    padding: 10px;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; 
+  }
+  
+  nav ul li {
+    margin-left: 20px; 
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    background-color: #2685b5;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .logo span {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  nav ul li.logo {
+    margin: 0;
+    flex: none;
+  }
+  
+  nav ul li.logo a {
+    background-image: url('path-to-your-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-indent: -9999px;
   }
